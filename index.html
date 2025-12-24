@@ -244,7 +244,7 @@
                     <div class="bg-white px-4 py-2 rounded-lg shadow-sm border border-pink-100 text-center">
                         <p class="text-xs text-gray-400 font-bold uppercase tracking-widest">Ví Momo</p>
                         <p class="font-mono font-bold text-pink-600 text-xl tracking-wider">0336497697</p>
-                        <p class="text-[10px] text-gray-500 font-bold uppercase mt-1">TRỊNH QUỐC TRUNG</p>
+                        <p class="text-[10px] text-gray-500 font-bold uppercase mt-1 text-center">A. TRUNG</p>
                     </div>
                 </div>
 
@@ -291,7 +291,7 @@
             <p class="text-gray-400 max-w-md mx-auto mb-4">Mùa Giáng sinh an lành, cầu chúc cho Trung luôn no bụng và có nhiều bia để uống.</p>
             <p class="text-gray-500 text-xs mb-8">Simulator tạo bởi <span class="text-red-400 font-medium">anh Tuấn</span>.</p>
             <div class="pt-8 border-t border-gray-800 text-gray-500 text-sm">
-                © 2025 Nuôi Trung Team. Merry Christmas!
+                © 2024 Nuôi Trung Team. Merry Christmas!
             </div>
         </div>
     </footer>
@@ -332,7 +332,7 @@
 
         function openPaymentModal(name, price) {
             const phone = "0336497697";
-            const fullName = "TRINH QUOC TRUNG";
+            const fullName = "A. Trung";
             const randomCode = Math.floor(Math.random() * 9000 + 1000);
             const note = "NOEL_CHO_TRUNG_" + randomCode;
 
@@ -340,8 +340,7 @@
             document.getElementById('package-price').innerText = Number(price).toLocaleString('vi-VN') + 'đ';
             document.getElementById('transfer-note').innerText = note;
 
-            // Tạo URL mã QR Momo (sử dụng API của QuickQR hoặc tương tự để tạo mã chuyển tiền Momo)
-            // Cú pháp chuẩn của Momo: 2|99|0336497697|TRINH QUOC TRUNG|email|0|0|amount|note
+            // Tạo URL mã QR Momo
             const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://nhantien.momo.vn/${phone}/${price}?note=${encodeURIComponent(note)}`;
             const deepLink = `https://nhantien.momo.vn/${phone}/${price}?note=${encodeURIComponent(note)}`;
 
